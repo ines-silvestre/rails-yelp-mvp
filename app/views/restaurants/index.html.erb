@@ -1,6 +1,6 @@
 <h1>Restaurants</h1>
 
-<div id="restaurants">
+<div id="card" class="card">
   <% @restaurants.each do |restaurant| %>
     <%= restaurant.name%>
     <p>
@@ -9,6 +9,6 @@
   <% end %>
 </div>
 <div>
-<%= link_to "Add restaurant", new_restaurant_path %>
+<button type="button" class="btn btn-warning"> <%= link_to "Add restaurant", new_restaurant_path %> </button>
 
   </div>
